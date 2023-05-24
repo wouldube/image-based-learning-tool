@@ -15,12 +15,14 @@ const SettingsPanel: React.FC<SettingsPanelProps> = ({ onChangeMode }) => {
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
           onClick={() => onChangeMode('multipleChoice')}
+          title="Switch to Multiple Choice mode"
         >
           Multiple Choice
         </button>
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded"
           onClick={() => onChangeMode('timedQuiz')}
+          title="Switch to Timed Quiz mode"
         >
           Timed Quiz
         </button>

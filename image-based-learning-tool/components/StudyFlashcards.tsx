@@ -78,11 +78,11 @@ const StudyFlashcards = () => {
       />
       <div className="flex justify-between">
         {/* Button for submitting the answer */}
-        <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={handleSubmit}>
+        <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={handleSubmit} title="Submit your answer">
           Submit
         </button>
         {/* Button for navigating to the next card */}
-        <button className="bg-gray-500 text-white px-4 py-2 rounded" onClick={handleNextCard}>
+        <button className="bg-gray-500 text-white px-4 py-2 rounded" onClick={handleNextCard} title="Go to the next flashcard">
           Next Card
         </button>
       </div>

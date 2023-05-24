@@ -12,10 +12,12 @@ const CreateFlashcardSet = () => {
       <button
         className="bg-blue-500 text-white px-4 py-2 rounded"
         onClick={toggleForm}
+        title="Create a new flashcard set or hide the form"
       >
         {showForm ? 'Hide Form' : 'Create Flashcard Set'}
       </button>
       {showForm && (
+        <>
         <form className="mt-4">
           <label className="block">
             <span className="text-gray-700">Title:</span>
@@ -35,6 +37,10 @@ const CreateFlashcardSet = () => {
           </label>
           {/* UPLOAD IMAGE??? */}
         </form>
+          <p className="text-sm text-gray-600 mt-2">
+            Note: Images uploaded should not exceed 500x500 pixels. The maximum number of flashcard sets allowed is 100.
+          </p>
+        </>
       )}
     </div>
   );

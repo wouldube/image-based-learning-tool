@@ -25,12 +25,14 @@ const FlashcardCustomization: React.FC<FlashcardCustomizationProps> = ({
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded mr-2"
           onClick={() => handleCustomize('white', fontStyles[0])}
+          title="Set flashcard background to white"
         >
           White Background
         </button>
         <button
           className="bg-blue-500 text-white px-4 py-2 rounded"
           onClick={() => handleCustomize('lightgray', fontStyles[1])}
+          title="Set flashcard background to light gray"
         >
           Light Gray Background
         </button>
